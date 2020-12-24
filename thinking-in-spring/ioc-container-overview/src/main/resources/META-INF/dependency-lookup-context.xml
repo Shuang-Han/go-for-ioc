@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="user" class="com.ganpengyu.study.ioc.domain.User">
+        <property name="id" value="1" />
+        <property name="name" value="callback" />
+    </bean>
+
+    <!--
+        ObjectFactoryCreatingFactoryBean 可以避免客户端直接使用 BeanFactory 去获取任意 Bean。
+        这个类会帮助客户端从 BeanFactory 获取泛型指定的 Bean，且只有在客户端调用其 getObject() 方法时才会
+        真正去查找目标 Bean。
+    -->
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="user" />
+    </bean>
+
+    <!--
+        beanFactory.getBean(User.class) 按类型查找会找到 User 和 SuperUser 导致报错。
+    -->
+    <bean id="superUser" class="com.ganpengyu.study.ioc.domain.SuperUser" parent="user">
+        <property name="address" value="成都"/>
+    </bean>
+
+</beans>
