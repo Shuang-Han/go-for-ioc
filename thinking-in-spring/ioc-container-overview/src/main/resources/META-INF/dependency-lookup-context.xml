@@ -25,7 +25,7 @@
     <!--
         beanFactory.getBean(User.class) 按类型查找会找到 User 和 SuperUser 导致报错。
     -->
-    <bean id="superUser" class="com.ganpengyu.study.ioc.domain.SuperUser" parent="user">
+    <bean id="superUser" class="com.ganpengyu.study.ioc.domain.SuperUser" parent="user" primary="true">
         <property name="address" value="成都"/>
     </bean>
 
