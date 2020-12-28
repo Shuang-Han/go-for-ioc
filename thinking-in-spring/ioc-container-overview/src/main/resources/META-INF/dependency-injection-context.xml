@@ -10,7 +10,7 @@
 
     <import resource="dependency-lookup-context.xml" />
 
-    <!-- 这里如果不设置 byType，那么 -->
+    <!-- 这里如果不设置 byType， beanFactory 和 objectFactory 注入不了 -->
     <bean id="userRepository" class="com.ganpengyu.study.ioc.repository.UserRepository" autowire="byType">
 <!--        <property name="users">-->
 <!--            <util:list>-->
