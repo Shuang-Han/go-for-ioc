@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="user" class="com.ganpengyu.study.ioc.domain.User">
+    <bean id="user" class="top.callback.study.ioc.domain.User">
         <property name="id" value="1" />
         <property name="name" value="callback" />
     </bean>
@@ -25,7 +25,7 @@
     <!--
         beanFactory.getBean(User.class) 按类型查找会找到 User 和 SuperUser 导致报错。
     -->
-    <bean id="superUser" class="com.ganpengyu.study.ioc.domain.SuperUser" parent="user" primary="true">
+    <bean id="superUser" class="top.callback.study.ioc.domain.SuperUser" parent="user" primary="true">
         <property name="address" value="成都"/>
     </bean>
 

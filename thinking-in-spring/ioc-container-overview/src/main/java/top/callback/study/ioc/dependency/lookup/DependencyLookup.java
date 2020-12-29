@@ -1,7 +1,7 @@
-package com.ganpengyu.study.ioc.dependency.lookup;
+package top.callback.study.ioc.dependency.lookup;
 
-import com.ganpengyu.study.ioc.annotation.Super;
-import com.ganpengyu.study.ioc.domain.User;
+import top.callback.study.ioc.annotation.Super;
+import top.callback.study.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

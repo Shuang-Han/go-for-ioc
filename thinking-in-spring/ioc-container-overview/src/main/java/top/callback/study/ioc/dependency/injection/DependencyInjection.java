@@ -1,6 +1,6 @@
-package com.ganpengyu.study.ioc.dependency.injection;
+package top.callback.study.ioc.dependency.injection;
 
-import com.ganpengyu.study.ioc.repository.UserRepository;
+import top.callback.study.ioc.repository.UserRepository;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.env.Environment;

@@ -1,4 +1,4 @@
-package com.ganpengyu.study.ioc.domain;
+package top.callback.study.ioc.domain;
 
 public class User {
 

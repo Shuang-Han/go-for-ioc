@@ -1,6 +1,6 @@
-package com.ganpengyu.study.ioc.domain;
+package top.callback.study.ioc.domain;
 
-import com.ganpengyu.study.ioc.annotation.Super;
+import top.callback.study.ioc.annotation.Super;
 
 @Super
 public class SuperUser extends User {

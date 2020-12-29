@@ -1,6 +1,6 @@
-package com.ganpengyu.study.ioc.repository;
+package top.callback.study.ioc.repository;
 
-import com.ganpengyu.study.ioc.domain.User;
+import top.callback.study.ioc.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;
